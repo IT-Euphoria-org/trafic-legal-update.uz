@@ -1,0 +1,377 @@
+{
+ "navbar": {
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "cases": "Case",
+      "services": "Services",
+      "page": "Page",
+      "news": "News",
+      "contacts": "Contact Us"
+    },
+    "tagline": "Providing legal services since 2015",
+    "call": "+998 90 008 07 65",
+    "lang_uz": "Uz",
+    "lang_en": "Eng",
+    "lang_ru": "Ru"
+  },
+  "footer": {
+    "desc": "Providing legal services since 2015",
+    "column_menu": "Menu",
+    "column_services": "Services",
+    "column_contacts": "Contacts",
+    "links": {
+      "services": "Services",
+      "cases": "Cases",
+      "about": "About Us",
+      "news": "News",
+      "contacts": "Contacts"
+    },
+    "service_links_1": [
+      "Legal consulting for business",
+      "Development and expertise of documents",
+      "Company registration",
+      "Business reorganization"
+    ],
+    "service_links_2": [
+      "Debt collection",
+      "Protection from creditors",
+      "Personnel records management",
+      "Subscription legal services"
+    ],
+    "address_value": "Tashkent, Amir Temur Avenue, 84",
+    "schedule_value": "Monday-Saturday, 9:00-18:00"
+  },
+  "intro": {
+    "title_part1": "Legal support for",
+    "title_part2": "businesses and legal protection for citizens",
+    "features": [
+      "Reliability, Expertise, Responsibility",
+      "Excellent conditions for clients",
+      "Individual approach"
+    ],
+    "cta_button": "Book a Consultation",
+    "cta_text_part1": "Get a",
+    "cta_text_part2": "free consultation",
+    "cta_text_part3": "from specialists with over 8 years of practical experience"
+  },
+  "about": {
+    "title": "About Us",
+    "text_part1": "Our company is a leading legal and accounting firm specializing in a wide range of specialized legal and accounting services, as well as providing comprehensive solutions for foreign clients. We offer highly qualified legal and accounting support in various fields of law, including corporate law, civil law, tax law, labor law, intellectual property law, administrative law, and others.",
+    "text_part2": "Our team consists of experienced lawyers and accountants with deep knowledge and practical experience, which allows us to effectively solve the most complex legal issues.",
+    "highlight_1": "Our company",
+    "highlight_2": "Our team",
+    "stats": [
+      {
+        "number": "2015",
+        "text": "Providing legal services"
+      },
+      {
+        "number": "500+",
+        "text": "Successfully completed cases"
+      },
+      {
+        "number": "100+",
+        "text": "Companies use our services"
+      }
+    ]
+  },
+  "services": {
+    "page_title_part1": "Our",
+    "page_title_part2": "Legal Services",
+    "card_link_text": "Read More",
+    "button_text": "Consultation",
+    "all_services_title": "View all",
+    "title_part1": "Economic and Corporate",
+    "title_part2": "Dispute Services",
+    "subtitle": "We handle cases of any complexity for individuals and legal entities",
+    "other_services_title": "Other",
+    "other_services_subtitle": "services",
+    "list": {
+      "document-expertise": {
+        "title": "Document Development & Expertise",
+        "text": "Professional drafting of contracts and legal analysis of documents.",
+        "fullContent": "We ensure full legal literacy of your workflow, including international contracts and internal local acts."
+      },
+      "licensing": {
+        "title": "Licensing",
+        "text": "Assistance in obtaining government licenses for various business activities.",
+        "fullContent": "Support for the licensing process from document collection to obtaining ready permits from state authorities."
+      },
+      "company-registration": {
+        "title": "Company Registration",
+        "text": "Full support for business setup: from choosing a form to tax registration.",
+        "fullContent": "Registration of LLCs, Individual Entrepreneurs, and foreign branches with a full package of constituent documents."
+      },
+      "debt-collection": {
+        "title": "Debt Collection",
+        "text": "Effective methods for recovering accounts receivable through court and negotiation.",
+        "fullContent": "Professional representation in courts and enforcement proceedings for the actual recovery of funds."
+      },
+      "trade-licensing": {
+        "title": "Trade Licensing",
+        "text": "Obtaining permits for retail and wholesale of specific goods.",
+        "fullContent": "Legal assistance in obtaining permits for the trade of alcohol, tobacco, and other excise products."
+      },
+      "business-consulting": {
+        "title": "Business Legal Consultations",
+        "text": "Prompt legal support on all matters of corporate and civil law.",
+        "fullContent": "Analysis of business processes for compliance with legislation and resolution of current legal disputes."
+      },
+      "creditor-protection": {
+        "title": "Protection from Creditors",
+        "text": "Legal mechanisms to protect company assets and restructure debts.",
+        "fullContent": "Development of an asset protection strategy and representation in negotiations with banks and creditors."
+      },
+      "hr-management": {
+        "title": "HR Records Management",
+        "text": "Audit and setup of HR records in accordance with labor law.",
+        "fullContent": "Development of labor contracts, job descriptions, and protection of employer interests in labor disputes."
+      },
+      "subscription-legal-service": {
+        "title": "Subscription Legal Services",
+        "text": "Your personal outsourced legal department for daily tasks.",
+        "fullContent": "Comprehensive business support at a fixed cost, replacing an in-house lawyer."
+      },
+      "medical-licensing": {
+        "title": "Medical Licensing",
+        "text": "Obtaining licenses for clinics, pharmacies, and medical centers.",
+        "fullContent": "Checking premises and equipment for compliance with sanitary and health ministry standards."
+      },
+      "it-legal-services": {
+        "title": "Legal Services for IT",
+        "text": "Legal support for software development and code protection.",
+        "fullContent": "Drafting of offers, license agreements, and legal support for entry into international markets."
+      },
+      "data-protection": {
+        "title": "Data Protection",
+        "text": "Ensuring company operations comply with data protection laws.",
+        "fullContent": "Development of privacy policies, data processing regulations, and prevention of information leaks."
+      },
+      "liquidation-procedure": {
+        "title": "Liquidation Procedure",
+        "text": "Safe termination of company activities without risks for owners.",
+        "fullContent": "Full cycle of closing a legal entity: from notifying authorities to destroying the seal."
+      },
+      "certification": {
+        "title": "Certification",
+        "text": "Assistance in certifying goods to confirm quality and standards.",
+        "fullContent": "Obtaining certificates of conformity, declarations, and refusal letters for free circulation of goods."
+      },
+      "patent-services": {
+        "title": "Patent Services",
+        "text": "Registration of trademarks and protection of intellectual property rights.",
+        "fullContent": "Checking brand uniqueness and full support for patent registration in patent offices."
+      }
+    }
+  },
+  "whyClients": {
+    "title_part1": "Why do clients",
+    "title_part2": "turn to us?",
+    "subtitle": "We adhere to ethics and do not disclose the names of our clients, but we can show examples of some cases",
+    "reasons": [
+      {
+        "title": "Extensive Experience",
+        "text": "Over 8 years of experience allow us to successfully resolve cases of any complexity"
+      },
+      {
+        "title": "All Services Turnkey",
+        "text": "At our law firm, we offer a full range of 'turnkey' services. This means we provide full legal support and resolve all legal issues and tasks"
+      },
+      {
+        "title": "Individual Approach",
+        "text": "We understand that every legal case is unique, so we carefully study the needs and goals of each client to provide the most suitable and effective solutions."
+      },
+      {
+        "title": "Excellent Client Conditions",
+        "text": "We adhere to the principles of transparency, reliability, and high-quality service. Our team of lawyers strives to provide you with the most effective and optimal solutions."
+      },
+      {
+        "title": "Reputation and Trust",
+        "text": "Our firm prides itself on its reputation as a reliable and trustworthy partner, making us the preferred choice for many clients."
+      },
+      {
+        "title": "Flexible Cooperation Terms",
+        "text": "We offer competitive pricing and flexible terms of cooperation to make our partnership convenient and beneficial for you."
+      }
+    ]
+  },
+  "ourCases": {
+    "title": "Our Cases",
+    "subtitle": "Here you can find our useful articles and the latest news",
+    "link_text": "Read more",
+    "cases": [
+      {
+        "title": "Client contacted the law firm to determine the legal aspects of the internet project concept"
+      },
+      {
+        "title": "Legal support for the acquisition of a ready-made business"
+      },
+      {
+        "title": "Consumer rights protection in a dispute with the bank"
+      },
+      {
+        "title": "Trademark registration and intellectual property protection"
+      }
+    ]
+  },
+  "consultation": {
+    "snack_name_error": "Name is too short, must be at least 2 letters.",
+    "snack_phone_error": "Invalid phone number format. Must be in (+998 XX YYY YY ZZ) format with 9 digits.",
+    "snack_success": "Your application was successfully accepted! We will contact you shortly.",
+    "title_part1": "Get a 30-minute consultation",
+    "title_part2": "with our lawyer, worth 500,000 UZS, absolutely free",
+    "form_title": "Leave an application",
+    "form_subtitle": "For a free consultation with a lawyer. This does not oblige you to anything",
+    "placeholder_name": "Name *",
+    "placeholder_phone": "Phone number *",
+    "button_text": "Get consultation",
+    "footer_text_part1": "Call the number",
+    "phone_number": "+998 90 008 07 65",
+    "footer_text_part2": "or leave an application directly on the messenger",
+    "benefits": [
+      {
+        "title": "We will offer several options for resolving disputes",
+        "text": "We will evaluate the prospects of several resolution options taking into account all possible outcomes"
+      },
+      {
+        "title": "We will openly state if the case has low chances of winning",
+        "text": "If the case has no development prospects, we will tell you how to get the maximum out of the situation, reduce costs and risks"
+      }
+    ]
+  },
+  "specialists": {
+    "title_part1": "You will be working with",
+    "title_part2": "our specialists",
+    "subtitle": "The average experience of our lawyers is 8 years",
+    "button_text": "Consultation",
+    "members": [
+      {
+        "name": "Batyr Ilkhamdzhanov",
+        "position": "Managing Partner",
+        "image": "/Images/man-image.png"
+      },
+      {
+        "name": "Yusufalieva Zarina",
+        "position": "Lawyer",
+        "image": "/Images/girl-image.png"
+      },
+      {
+        "name": "Iskandarov Shakhzod",
+        "position": "Lawyer",
+        "image": "/Images/boy-image.png"
+      },
+      {
+        "name": "Yulchieva Kamila",
+        "position": "Accountant",
+        "image": "/Images/douter-image.png"
+      }
+    ]
+  },
+  "ourPartners": {
+    "title": "Our Partners",
+    "subtitle": "Here you can get acquainted with our partners who trust us",
+    "logos_alt": "Partner logo"
+  },
+  "casesWon": {
+    "title": "Cases Won",
+    "subtitle": "We respect ethics and do not disclose the names of our clients, but we can show examples of some cases",
+    "situation_label": "Situation",
+    "solution_label": "Court Decision",
+    "link_text": "Read more",
+    "items": [
+      {
+        "title": "Legal support for an internet project: development of the interaction procedure and internal documentation.",
+        "situation": "The client contacted the law firm to determine the legal aspects of the concept of the internet project, with the development of principles for user interaction...",
+        "solution": "An unusual format of regulation, lack of law enforcement practice and judicial practice were successfully handled..."
+      },
+      {
+        "title": "Support for a transaction to acquire a ready-made business",
+        "situation": "The client planned to buy an existing business and applied for legal support of the transaction, checking documents and minimizing risks.",
+        "solution": "A full due diligence was conducted, hidden liabilities were identified, the structure of the transaction was optimized, and the client's interests were protected."
+      }
+    ]
+  },
+  "news": {
+    "title": "News",
+    "view_all": "View all",
+    "read_more": "Read more",
+    "items": [
+      {
+        "date": "15.02.2025",
+        "title": "The client contacted a law firm to determine the legal aspects of the internet project"
+      },
+      {
+        "date": "10.02.2025",
+        "title": "Support for a transaction to purchase a ready-made business"
+      },
+      {
+        "date": "05.02.2025",
+        "title": "Consumer rights protection in a dispute with a bank"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacts",
+    "address_label": "Address:",
+    "address_text": "84 Amir Temur Avenue, Tashkent",
+    "phone_label": "Phone:",
+    "work_time_label": "Working hours:",
+    "work_time_text": "Monday-Saturday, 9:00-18:00",
+    "email_label": "Email:"
+  },
+  "form": {
+    "title_span": "Fill out the form",
+    "title_main": "for consultation",
+    "subtitle": "To get more detailed information from our experienced specialists.",
+    "name_placeholder": "Your Name *",
+    "phone_placeholder": "Phone Number *",
+    "email_placeholder": "Email (optional)",
+    "message_placeholder": "Enter your message",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "Sent successfully!",
+    "error": "Error while sending",
+    "validation_error": "Please fill in the required fields"
+  },
+  "seo": {
+    "site_name": "Traffic Legal",
+    "title": "Traffic Legal - Professional Legal Services and Lawyers in Tashkent",
+    "description": "Professional legal consultations in Tashkent, court defense, and lawyer assistance. Traffic lawyer, contract drafting, and legal support for business and individuals.",
+    "keywords": "lawyer, attorney, lawyer in Tashkent, legal services, legal aid, traffic lawyer, car accident attorney, court cases, litigation, contract drafting, legal consultation, free legal aid, Tashkent lawyer, business lawyer, corporate law, alimony recovery, inheritance cases, land disputes, cancellation of fines, judicial defense, law firm, lawyers of Tashkent, legal assistance, jurist, obtaining a license, help in opening a company, tax consultant, labor disputes, housing issues, administrative cases, civil law, criminal defense lawyer, legal advice Tashkent, international law, intellectual property protection, patenting, brand registration, customs issues, legal aid for migrants, banking disputes, credit issues, enforcement proceedings, bankruptcy, insurance disputes, medical law, education law, environmental law, cyber law, IT lawyer, digital law, best lawyers in Tashkent, Uzbekistan law firm, legal expert, representation in court"
+  },
+  "modal": {
+    "title": "Get a Consultation",
+    "description": "Fill out the form so our specialists can contact you.",
+    "placeholder_name": "Your Name",
+    "placeholder_message": "Enter your message...",
+    "btn_send": "Send",
+    "btn_sending": "Sending...",
+    "btn_success": "Successfully Sent ",
+    "btn_error": "An error occurred ",
+    "footer_text": "Or call us:",
+    "footer_subtext": "or contact us via messenger",
+    "error_phone": "Please enter the full phone number!"
+  },
+  "newspaper": {
+    "title": "WizzAir to Provide Uzbek Language Services on Flights to Uzbekistan",
+    "desc_lead": "WizzAir will ensure services in the Uzbek language on its flights to Uzbekistan. This was announced by the Committee for the Promotion of Competition and Protection of Consumer Rights.",
+    "p1": "According to the Committee, a request from former deputy Rasul Kusherbayev regarding issues encountered with WizzAir's services on the 'Samarkand-Abu Dhabi' route was reviewed.",
+    "p2": "The Committee's investigation revealed that during the flight, crew members provided safety instructions in a foreign language. When asked to explain the rules in Uzbek or Russian, a staff member reportedly behaved rudely, and the passenger was asked to leave the aircraft, though eventually reached Abu Dhabi on the same flight.",
+    "p3": "The Committee sent an inquiry to the Ministry of Transport regarding the investigation. As a result, appropriate measures were taken against the airline employees who engaged in arbitrary actions, according to the report."
+  },
+  "news_page": {
+    "title": "All News",
+    "view_all": "View all",
+    "read_more": "Read more",
+    "items": {
+      "news-1": {
+        "title": "WizzAir to Provide Uzbek Language Services on Flights to Uzbekistan",
+        "desc_lead": "WizzAir airline has introduced Uzbek language services for passengers in Uzbekistan.",
+        "p1": "According to the Committee, safety instructions will now be explained in Uzbek on all flights.",
+        "p2": "This decision was made after numerous complaints and suggestions from passengers.",
+        "p3": "Earlier, there were reports of misunderstandings with crew members regarding the language."
+      }
+    }
+  }
+}

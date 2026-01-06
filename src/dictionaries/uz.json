@@ -1,0 +1,391 @@
+{
+  "navbar": {
+    "links": {
+      "home": "Bosh sahifa",
+      "about": "Biz haqimizda",
+      "cases": "Ishlar",
+      "services": "Xizmatlar",
+      "page": "Sahifa",
+      "news": "Yangiliklar",
+      "contacts": "Bog'lanish"
+    },
+    "tagline": "2015-yildan beri huquqiy xizmatlar",
+    "call": "+998 90 008 07 65",
+    "lang_uz": "Uz",
+    "lang_en": "Eng",
+    "lang_ru": "Ru"
+  },
+  "footer": {
+    "desc": "2015 yildan buyon yuridik xizmatlar ko‘rsatamiz",
+    "column_menu": "Menyu",
+    "column_services": "Xizmatlar",
+    "column_contacts": "Kontaktlar",
+    "links": {
+      "services": "Xizmatlar",
+      "cases": "Keyslar",
+      "about": "Biz haqimizda",
+      "news": "Yangiliklar",
+      "contacts": "Kontaktlar"
+    },
+    "service_links_1": [
+      "Biznes uchun yuridik konsultatsiyalar",
+      "Hujjatlarni ishlab chiqish va ekspertizasi",
+      "Kompaniyani ro'yxatdan o'tkazish",
+      "Biznesni qayta tashkil etish"
+    ],
+    "service_links_2": [
+      "Qarzdorlikni undirish",
+      "Kreditorlardan himoya",
+      "Kadrlar ishini yuritish",
+      "Abonentlik yuridik xizmatlari"
+    ],
+    "address_value": "Toshkent, Amir Temur shoh ko'chasi, 84",
+    "schedule_value": "Dushanba-shanba, 9:00-18:00"
+  },
+  "intro": {
+    "title_part1": "Biznesni yuridik",
+    "title_part2": "qo'llab-quvvatlash va fuqarolarning huquqiy himoyasi",
+    "features": [
+      "Ishonchlilik, ekspertlik, mas'uliyat",
+      "Mijozlar uchun a'lo sharoitlar",
+      "Individual yondashuv"
+    ],
+    "cta_button": "Konsultatsiyaga yozilish",
+    "cta_text_part1": "8 yildan ortiq amaliy tajribaga ega mutaxassislardan",
+    "cta_text_part2": "bepul konsultatsiya",
+    "cta_text_part3": "oling"
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "text_part1": "Kompaniyamiz — keng qamrovli ixtisoslashtirilgan yuridik va buxgalteriya xizmatlariga ixtisoslashgan yetakchi yuridik va buxgalteriya firmasi, shuningdek, xorijiy mijozlar uchun kompleks yechimlarni taqdim etadi. Biz huquqning turli sohalarida, jumladan, korporativ huquq, fuqarolik huquqi, soliq huquqi, mehnat huquqi, intellektual mulk huquqi, ma'muriy huquq va boshqalarda yuqori malakali yuridik va buxgalteriya xizmatlarini taklif etamiz.",
+    "text_part2": "Bizning jamoamiz — chuqur bilim va amaliy tajribaga ega bo'lgan tajribali yuristlar va buxgalterlardan iborat bo'lib, bu bizga eng murakkab huquqiy masalalarni samarali hal qilish imkonini beradi.",
+    "highlight_1": "Kompaniyamiz",
+    "highlight_2": "Bizning jamoamiz",
+    "stats": [
+      {
+        "number": "2015",
+        "text": "Yuridik xizmatlar ko‘rsatamiz"
+      },
+      {
+        "number": "500+",
+        "text": "Muvaffaqiyatli yakunlangan ishlar"
+      },
+      {
+        "number": "100+",
+        "text": "Kompaniyalar xizmatlarimizdan foydalanadi"
+      }
+    ]
+  },
+  "services": {
+    "page_title_part1": "Bizning",
+    "page_title_part2": "Yuridik Xizmatlar",
+    "card_link_text": "Batafsil",
+    "button_text": "Konsultatsiya",
+    "all_services_title": "Barchasini ko'rish",
+    "title_part1": "Iqtisodiy va korporativ",
+    "title_part2": "nizolar bo'yicha xizmatlar",
+    "subtitle": "Jismoniy va yuridik shaxslar uchun har qanday murakkablikdagi ishlarni olib boramiz",
+    "other_services_title": "Boshqa",
+    "other_services_subtitle": "xizmatlar",
+    "list": {
+      "document-expertise": {
+        "title": "Hujjatlar tahlili va ishlab chiqish",
+        "text": "Shartnomalarni professional tuzish va huquqiy tahlil qilish.",
+        "fullContent": "Biz hujjatlar aylanishining to'liq qonuniyligini, jumladan xalqaro shartnomalar va ichki aktlarni ta'minlaymiz."
+      },
+      "licensing": {
+        "title": "Litsenziyalash",
+        "text": "Turli faoliyat turlari uchun davlat litsenziyalarini olishda yordam.",
+        "fullContent": "Hujjatlarni yig'ishdan tortib davlat organlaridan tayyor ruxsatnomalarni olishgacha bo'lgan jarayonni kuzatib borish."
+      },
+      "company-registration": {
+        "title": "Kompaniya ro'yxatdan o'tkazish",
+        "text": "Biznesni ochishda to'liq hamrohlik: shaklni tanlashdan hisobga qo'yishgacha.",
+        "fullContent": "MCHJ, YaTT va xorijiy vakolatxonalarni ta'sis hujjatlarining to'liq paketini tayyorlagan holda ro'yxatdan o'tkazish."
+      },
+      "debt-collection": {
+        "title": "Qarzlarni undirish",
+        "text": "Debitorlik qarzlarini sud orqali qaytarishning samarali usullari.",
+        "fullContent": "Sudlarda professional vakillik va mablag'larni haqiqiy qaytarish uchun ijro ishi bilan ishlash."
+      },
+      "trade-licensing": {
+        "title": "Savdo litsenziyasi",
+        "text": "Mahsulotlarning o'ziga xos turlari bilan savdo qilish uchun ruxsatnomalar olish.",
+        "fullContent": "Alkogol, tamaki va boshqa aksiz ostidagi mahsulotlar savdosi uchun ruxsatnomalarni rasmiylashtirishda yordam."
+      },
+      "business-consulting": {
+        "title": "Biznes uchun huquqiy maslahatlar",
+        "text": "Huquqning barcha masalalari bo'yicha tezkor huquqiy yordam.",
+        "fullContent": "Biznes jarayonlarini qonunchilikka muvofiqligini tahlil qilish va mavjud huquqiy nizolarni hal qilish."
+      },
+      "creditor-protection": {
+        "title": "Kreditorlardan himoya",
+        "text": "Aktivlarni himoya qilishning qonuniy mexanizmlari va qarzlarni restrukturizatsiya qilish.",
+        "fullContent": "Mulkni himoya qilish strategiyasini ishlab chiqish va banklar hamda kreditorlar bilan muzokaralarda vakillik qilish."
+      },
+      "hr-management": {
+        "title": "Kadrlar ishini yuritish",
+        "text": "Kadrlar hisobini mehnat qonunchiligiga muvofiq audit qilish va yo'lga qo'yish.",
+        "fullContent": "Mehnat shartnomalari, lavozim yo'riqnomalarini ishlab chiqish va mehnat nizolarida ish beruvchi manfaatlarini himoya qilish."
+      },
+      "subscription-legal-service": {
+        "title": "Abonentlik huquqiy xizmati",
+        "text": "Kundalik vazifalarni hal qilish uchun autsorsingdagi shaxsiy yuridik bo'limingiz.",
+        "fullContent": "Shtatdagi yurist o'rnini bosuvchi, qat'iy narx bo'yicha biznesni kompleks huquqiy qo'llab-quvvatlash."
+      },
+      "medical-licensing": {
+        "title": "Tibbiy faoliyatni litsenziyalash",
+        "text": "Klinikalar, dorixonalar va tibbiyot markazlari uchun litsenziyalar olish.",
+        "fullContent": "Binolar va jihozlarni muvaffaqiyatli litsenziyalash uchun SanPin va Sog'liqni saqlash vazirligi me'yorlariga muvofiqligini tekshirish."
+      },
+      "it-legal-services": {
+        "title": "IT-kompaniyalar uchun xizmatlar",
+        "text": "Dasturiy ta'minotni ishlab chiqish va kodni himoya qilishni huquqiy qo'llab-quvvatlash.",
+        "fullContent": "Ofertalarni, litsenziya shartnomalarini tuzish va xalqaro bozorlarga chiqishda huquqiy yordam."
+      },
+      "data-protection": {
+        "title": "Shaxsiy ma'lumotlarni himoya qilish",
+        "text": "Faoliyatni shaxsiy ma'lumotlarni himoya qilish to'g'risidagi qonun talablariga muvofiqlashtirish.",
+        "fullContent": "Maxfiylik siyosati va ma'lumotlarni qayta ishlash reglamentlarini ishlab chiqish hamda sizib chiqishlarning oldini olish."
+      },
+      "liquidation-procedure": {
+        "title": "Tugatish jarayoni",
+        "text": "Kompaniya faoliyatini egalari uchun salbiy oqibatlarsiz xavfsiz to'xtatish.",
+        "fullContent": "Yuridik shaxsni yopishning to'liq sikli: organlarni xabardor qilishdan muhrni yo'q qilishgacha."
+      },
+      "certification": {
+        "title": "Sertifikatlashtirish",
+        "text": "Sifatni tasdiqlash uchun tovar va xizmatlarni sertifikatlashda yordam.",
+        "fullContent": "Tovarlarning erkin aylanishi uchun muvofiqlik sertifikatlari, deklaratsiyalar va rad etish xatlarini olish."
+      },
+      "patent-services": {
+        "title": "Patent xizmatlari",
+        "text": "Tovar belgilarini ro'yxatdan o'tkazish va intellektual mulk huquqlarini himoya qilish.",
+        "fullContent": "Brendning o'ziga xosligini tekshirish va patent idoralarida patentlarni ro'yxatdan o'tkazishni to'liq kuzatib borish."
+      }
+    }
+  },
+  "whyClients": {
+    "title_part1": "Nima uchun mijozlar",
+    "title_part2": "bizga murojaat qilishadi?",
+    "subtitle": "Biz etikaga amal qilamiz va mijozlarimiz ismlarini oshkor qilmaymiz, lekin ba'zi ishlar misollarini ko'rsatishimiz mumkin",
+    "reasons": [
+      {
+        "title": "Katta tajriba",
+        "text": "8 yildan ortiq staj bizga har qanday murakkablikdagi ishlarni muvaffaqiyatli hal qilish imkonini beradi"
+      },
+      {
+        "title": "Barcha xizmatlar 'Kalit topshirish'",
+        "text": "Bizning yuridik firmamizda biz to'liq 'kalit topshirish' xizmatlari spektrini taklif qilamiz. Bu to'liq yuridik qo'llab-quvvatlashni ta'minlaymiz va barcha yuridik masalalarni hal qilamiz deganidir"
+      },
+      {
+        "title": "Individual yondashuv",
+        "text": "Biz har bir yuridik ish o'ziga xos ekanligini tushunamiz, shuning uchun eng mos va samarali yechimlarni taqdim etish uchun har bir mijozning ehtiyojlari va maqsadlarini sinchkovlik bilan o'rganamiz."
+      },
+      {
+        "title": "Mijozlar uchun ajoyib shartlar",
+        "text": "Biz shaffoflik, ishonchlilik va yuqori sifatli xizmat ko'rsatish tamoyillariga amal qilamiz. Bizning yuristlar jamoasi sizga eng samarali va optimal yechimlarni taqdim etishga intiladi."
+      },
+      {
+        "title": "Obro' va ishonch",
+        "text": "Firmamiz o'zining ishonchli va mustahkam sherik sifatidagi obro'si bilan faxrlanadi, bu esa bizni ko'plab mijozlar uchun afzal tanlovga aylantiradi."
+      },
+      {
+        "title": "Moslashuvchan hamkorlik shartlari",
+        "text": "Biz hamkorligimizni qulay va foydali qilish uchun raqobatbardosh narxlar va moslashuvchan hamkorlik shartlarini taklif etamiz."
+      }
+    ]
+  },
+  "ourCases": {
+    "title": "Bizning ishlarimiz",
+    "subtitle": "Bu yerda siz foydali maqolalarimiz va so‘nggi yangiliklarimiz bilan tanishishingiz mumkin",
+    "link_text": "To‘liq o‘qish",
+    "cases": [
+      {
+        "title": "Mijoz internet-loyihaning huquqiy jihatlarini aniqlash uchun yuridik firmaga murojaat qildi"
+      },
+      {
+        "title": "Tayyor biznesni sotib olish bo‘yicha bitimni yuridik qo‘llab-quvvatlash"
+      },
+      {
+        "title": "Bank bilan nizo bo‘yicha iste'molchi huquqlarini himoya qilish"
+      },
+      {
+        "title": "Tovar belgisini ro‘yxatdan o‘tkazish va intellektual mulkni himoya qilish"
+      }
+    ]
+  },
+  "consultation": {
+    "title_part1": "Bizning advokatimizning 500 000 so‘mlik 30 daqiqalik maslahatini",
+    "title_part2": "mutlaqo bepul oling",
+    "form_title": "Ariza qoldiring",
+    "form_subtitle": "Advokat bilan bepul maslahat olish uchun. Bu sizni hech narsaga majburlamaydi",
+    "placeholder_name": "Ism *",
+    "placeholder_phone": "Telefon raqami *",
+    "button_text": "Konsultatsiya olish",
+    "footer_text_part1": "Ushbu raqamga qo‘ng‘iroq qiling",
+    "phone_number": "+998 90 008 07 65",
+    "footer_text_part2": "yoki to‘g‘ridan-to‘g‘ri messenjer orqali ariza qoldiring",
+    "benefits": [
+      {
+        "title": "Nizolarni hal qilishning bir nechta variantini taklif qilamiz",
+        "text": "Barcha mumkin bo‘lgan natijalarni hisobga olgan holda bir nechta yechim variantlarining istiqbollarini baholaymiz"
+      },
+      {
+        "title": "Agar ishda g‘alaba qozonish imkoniyati past bo‘lsa, ochiq aytamiz",
+        "text": "Agar ishning rivojlanish istiqboli bo‘lmasa, vaziyatdan maksimal foyda olish, xarajatlar va xatarlarni kamaytirish yo‘llarini aytib beramiz"
+      }
+    ],
+    "snack_name_error": "Ism juda qisqa, kamida 2 ta harf bo'lishi kerak.",
+    "snack_phone_error": "Telefon raqami formati noto'g'ri. (+998 XX YYY YY ZZ formatida to'liq 9 ta raqam kiritilishi kerak)",
+    "snack_success": "Arizangiz muvaffaqiyatli qabul qilindi! Tez orada siz bilan bog'lanamiz."
+  },
+  "specialists": {
+    "title_part1": "Siz bilan birga ishlaydi",
+    "title_part2": "bizning mutaxassislarimiz",
+    "subtitle": "Bizning huquqshunoslarimizning o'rtacha tajribasi — 8 yil",
+    "button_text": "Konsultatsiya",
+    "members": [
+      {
+        "name": "Botir Ilhomjonov",
+        "position": "Boshqaruvchi hamkor (Managing Partner)",
+        "image": "/Images/man-image.png"
+      },
+      {
+        "name": "Yusufaliyeva Zarina",
+        "position": "Huquqshunos",
+        "image": "/Images/girl-image.png"
+      },
+      {
+        "name": "Iskandarov Shahzod",
+        "position": "Huquqshunos",
+        "image": "/Images/boy-image.png"
+      },
+      {
+        "name": "Yo'lchiyeva Kamila",
+        "position": "Buxgalter",
+        "image": "/Images/douter-image.png"
+      }
+    ]
+  },
+  "ourPartners": {
+    "title": "Bizning hamkorlarimiz",
+    "subtitle": "Bu yerda bizga ishongan hamkorlarimiz bilan tanishishingiz mumkin",
+    "logos_alt": "Hamkor logotipi"
+  },
+  "casesWon": {
+    "title": "Yutilgan ishlar",
+    "subtitle": "Biz etikaga rioya qilamiz va mijozlarimiz ismlarini oshkor qilmaymiz, lekin ba'zi misollarni ko'rsatishimiz mumkin",
+    "situation_label": "Vaziyat",
+    "solution_label": "Sud qarori",
+    "link_text": "Batafsil",
+    "items": [
+      {
+        "title": "Internet-loyihani huquqiy qo'llab-quvvatlash: o'zaro munosabatlar tartibini va ichki hujjatlarni ishlab chiqish.",
+        "situation": "Mijoz internet-loyiha konsepsiyasining huquqiy jihatlarini aniqlash uchun yuridik firmaga murojaat qildi...",
+        "solution": "G'ayrioddiy tartibga solish formati, huquqni qo'llash va sud amaliyotining yo'qligi hal qilindi..."
+      },
+      {
+        "title": "Tayyor biznesni sotib olish bo'yicha bitimni kuzatib borish",
+        "situation": "Mijoz ishlayotgan biznesni sotib olishni rejalashtirgan va bitimni huquqiy kuzatib borish uchun murojaat qilgan...",
+        "solution": "To'liq due diligence o'tkazildi, yashirin majburiyatlar aniqlandi, bitim tuzilmasi optimallashtirildi..."
+      }
+    ]
+  },
+  "news": {
+    "title": "Yangiliklar",
+    "view_all": "Barchasini ko'rish",
+    "read_more": "To'liq o'qish",
+    "items": [
+      {
+        "date": "15.02.2025",
+        "title": "Mijoz internet-loyiha konsepsiyasining huquqiy jihatlarini aniqlash uchun murojaat qildi"
+      },
+      {
+        "date": "10.02.2025",
+        "title": "Tayyor biznesni sotib olish bo'yicha bitimni kuzatib borish"
+      },
+      {
+        "date": "05.02.2025",
+        "title": "Bank bilan nizoda iste'molchilar huquqlarini himoya qilish"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontaktlar",
+    "address_label": "Manzil:",
+    "address_text": "Toshkent, Amir Temur shox ko'chasi, 84",
+    "phone_label": "Telefon:",
+    "work_time_label": "Ish vaqti:",
+    "work_time_text": "Dushanba-shanba, 9:00-18:00",
+    "email_label": "Elektron pochta:"
+  },
+  "form": {
+    "title_span": "Formani to'ldiring",
+    "title_main": "maslahat olish uchun",
+    "subtitle": "Bizning tajribali mutaxassislarimizdan batafsil ma'lumot olish uchun quyidagilarni to'ldiring.",
+    "name_placeholder": "Ismingiz *",
+    "phone_placeholder": "Telefon raqamingiz *",
+    "email_placeholder": "Email (ixtiyoriy)",
+    "message_placeholder": "Xabar matnini kiriting",
+    "submit": "Yuborish",
+    "sending": "Yuborilmoqda...",
+    "success": "Muvaffaqiyatli yuborildi!",
+    "error": " Xatolik yuz berdi",
+    "validation_error": "Iltimos, majburiy maydonlarni to'ldiring"
+  },
+  "seo": {
+    "site_name": "Traffic Legal",
+    "title": "Traffic Legal - Toshkentda professional yuridik xizmatlar va advokatlar",
+    "description": "Toshkentda yuridik maslahatlar, sud ishlarida himoya va advokat yordami. Avtoadvokat, shartnomalar tuzish va huquqiy qo'llab-quvvatlash.",
+    "keywords": "yurist, advokat, Toshkent yurist, yuridik xizmatlar, huquqiy yordam, avtoadvokat, yo'l transport hodisasi yurist, sud ishlari, shartnoma tuzish, yuridik maslahat, bepul yuridik yordam, advokat Toshkent, biznes yurist, korporativ huquq, aliment undirish, meros ishlari, yer nizolari, jarimalarni bekor qilish, sud himoyasi, advokatlik byurosi, yuridik firma, Toshkent advokatlari, qonuniy yordam, huquqshunos, litsenziya olish, firma ochish yordami, soliq maslahatchisi, mehnat nizolari, uy-joy masalalari, ma'muriy ishlar, fuqarolik huquqi, jinoyat ishlari bo'yicha advokat, Toshkent yuridik konsultatsiyasi, xalqaro huquq, intellektual mulk himoyasi, patent olish, brendni ro'yxatdan o'tkazish, bojxona masalalari, migrantlar uchun huquqiy yordam, bank nizolari, kredit masalalari, ijro ishi, bankrotlik, sug'urta nizolari, tibbiy huquq, ta'lim huquqi, ekologik huquq, kiberhuquq, IT yurist, raqamli huquq, Toshkent shahar advokatlari"
+  },
+  "modal": {
+    "title": "Konsultatsiya olish",
+    "description": "Mutaxassislarimiz siz bilan bog'lanishi uchun shaklni to'ldiring.",
+    "placeholder_name": "Ismingiz",
+    "placeholder_message": "Xabaringizni yozing...",
+    "btn_send": "Yuborish",
+    "btn_sending": "Yuborilmoqda...",
+    "btn_success": "Muvaffaqiyatli yuborildi ",
+    "btn_error": "Xatolik yuz berdi ",
+    "footer_text": "Yoki bizga qo'ng'iroq qiling:",
+    "footer_subtext": "yoki messajyerga yozing",
+    "error_phone": "Raqamni to'liq kiriting!"
+  },
+  "newspaper": {
+    "title": "WizzAir O‘zbekistonga amalga oshiradigan reyslarida o‘zbek tilida ham xizmat ko‘rsatadi",
+    "desc_lead": "WizzAir aviakompaniyasi O‘zbekistonga amalga oshirgan reyslarida o‘zbek tilida ham xizmat ko‘rsatishni ta’minlaydi. Bu haqda Raqobatni rivojlantirish va iste’molchilar huquqlarini himoya qilish qo‘mitasi ma’lum qildi.",
+    "p1": "Qo‘mita xabariga ko‘ra, sobiq deputat Rasul Kusherbayevning «Samarqand-Abu-Dabi» yo‘nalishi bilan «WizzAir» aviakompaniyasi tomonidan ko‘rsatilgan xizmatlarda muammoga duch kelgani yuzasidan murojaati ko‘rib chiqilgan.",
+    "p2": "«Raqobat qo‘mitasining olib borgan o‘rganishlarida murojaatchining uchish davrida aviakompaniyaning ekipaj a’zolari tomonidan xorijiy tilda xavfsizlik qoidalari haqida ma’lumot berilgani, bu qoidalarni o‘zbek va rus tillarida tushuntirib berishlari so‘ralganida xodim tomonidan unga nisbatan qo‘pol muomalada bo‘lingani, bortni tark etish talab qilingani va shu tarzda fuqaro mazkur reysda Abu-Dabiga yetib borgani ma’lum bo‘ldi.",
+    "p3": "Qo‘mita tomonidan Transport vazirligiga o‘rganishlar yuzasidan so‘rov xati yuborildi. Natijada o‘zboshimchalik bilan xatti-harakatlarni amalga oshirgan mazkur aviakompaniya xodimlariga nisbatan chora ko‘rildi», deyiladi xabarda."
+  },
+  "news_page": {
+    "title": "Barcha yangiliklar",
+    "view_all": "Hammasini ko'rish",
+    "read_more": "Batafsil",
+    "items": {
+      "news-1": {
+        "title": "WizzAir O‘zbekistonga amalga oshiradigan reyslarida o‘zbek tilida xizmat ko‘rsatadi",
+        "desc_lead": "WizzAir aviakompaniyasi O‘zbekistondagi yo'lovchilar uchun o'zbek tili xizmatini joriy qildi.",
+        "p1": "Raqobat qo‘mitasi xabariga ko‘ra, endilikda barcha parvozlarda xavfsizlik qoidalari o'zbek tilida tushuntiriladi.",
+        "p2": "Bu qaror ko'plab yo'lovchilarning e'tirozlari va takliflaridan so'ng qabul qilindi.",
+        "p3": "Eslatib o'tamiz, avvalroq ekipaj a'zolari bilan til masalasida kelishmovchiliklar yuzaga kelgan edi."
+      },
+      "news-2": {
+        "title": "Yo'l harakati xavfsizligi bo'yicha yangi qoidalari e'lon qilindi",
+        "desc_lead": "2025-yildan boshlab yo'llarda xavfsizlikni ta'minlashning yangi bosqichi boshlanadi.",
+        "p1": "Yangi qoidalarga ko'ra, jarimalar tizimi to'liq raqamlashtiriladi.",
+        "p2": "Haydovchilar uchun ballik tizim joriy etilishi kutilmoqda.",
+        "p3": "Bu yo'llardagi avariyalar sonini 30% ga kamaytirishga yordam beradi."
+      },
+      "news-3": {
+        "title": "Sug'urta polislarini onlayn rasmiylashtirish soddalashtirildi",
+        "desc_lead": "Endi sug'urta shartnomalarini mobil ilova orqali 2 daqiqada tuzish mumkin.",
+        "p1": "Davlat xizmatlari markazi yangi platformani ishga tushirdi.",
+        "p2": "Foydalanuvchilar ortiqcha hujjatlarsiz faqat PYNFL orqali ro'yxatdan o'tadilar.",
+        "p3": "Tizim hozirda test rejimida ishlamoqda."
+      }
+    }
+  }
+}
