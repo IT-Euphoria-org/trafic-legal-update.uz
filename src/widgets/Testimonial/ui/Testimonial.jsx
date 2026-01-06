@@ -10,9 +10,9 @@ const Testimonial = () => {
     // Services bo'limidan keyin bo'shliqsiz ulanadi
     <section className="relative w-full bg-[#0a0a0a] lg:py-24 overflow-hidden -mt-1">
       {/* Background Image (xira gumbaz) */}
-      <div className="absolute inset-0 z-0 opacity-10">
+      <div className="absolute inset-0 z-0 ">
         <Image
-          src="/Images/capitol-dome.jpg"
+          src="/buld.png"
           alt="Background Decoration"
           fill
           className="object-contain object-center"

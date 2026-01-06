@@ -28,42 +28,49 @@ const timelineData = [
 
 const Timeline = () => {
   return (
-    <section className="relative w-full bg-white py-2 lg:py-32">
+    <section className="relative w-full bg-white py-20 lg:py-32 overflow-hidden">
       <Container>
         <div className="relative">
-          {/* Gorizontal chiziq - Markazda */}
-          <div className="absolute top-[45px] left-0 w-full h-[2px] bg-gray-200 hidden md:block" />
+          {/* Desktop Full-Width Line */}
+          <div className="absolute top-[48px] left-[-100vw] right-[-100vw] h-[2px] bg-gray-200 hidden md:block z-0" />
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-16 md:gap-8 relative z-10">
             {timelineData.map((item, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className="flex flex-col items-center text-center group"
+                transition={{ delay: index * 0.1 }}
+                className="relative flex flex-row md:flex-col items-start md:items-center text-left md:text-center group"
               >
-                {/* Yil matni */}
-                <span className="text-[16px] font-bold text-[#1a1612] mb-4 tracking-wider">
-                  {item.year}
-                </span>
+                {/* Mobile Vertical Line */}
+                {index !== timelineData.length - 1 && (
+                  <div className="absolute left-[11px] top-[30px] w-[2px] h-full bg-gray-100 md:hidden" />
+                )}
 
-                {/* Doira (Node) */}
-                <div className="w-[18px] h-[18px] rounded-full border-4 border-gray-200 bg-white mb-8 group-hover:border-[#C59D5F] group-hover:scale-125 transition-all duration-300 relative">
-                  {/* Markazdagi nuqta faqat hoverda ko'rinadi */}
-                  <div className="absolute inset-0 m-auto w-1.5 h-1.5 bg-[#C59D5F] rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
+                {/* Node Section */}
+                <div className="flex flex-col items-center shrink-0">
+                  <span className="hidden md:block text-[16px] font-bold text-[#1a1612] mb-6 tracking-widest transition-colors group-hover:text-[#C59D5F]">
+                    {item.year}
+                  </span>
+                  <div className="w-[24px] h-[24px] rounded-full border-[2px] border-gray-300 bg-white flex items-center justify-center z-10 group-hover:border-[#C59D5F] transition-all duration-300">
+                    <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:bg-[#C59D5F] transition-colors" />
+                  </div>
                 </div>
 
-                {/* Sarlavha */}
-                <h3 className="text-[14px] font-black text-[#1a1612] uppercase tracking-[0.1em] mb-4">
-                  {item.title}
-                </h3>
-
-                {/* Tavsif */}
-                <p className="text-gray-400 text-[13px] leading-relaxed max-w-[200px]">
-                  {item.desc}
-                </p>
+                {/* Content Section */}
+                <div className="ml-6 md:ml-0 md:mt-10">
+                  <span className="md:hidden text-[13px] font-bold text-[#C59D5F] mb-1 block">
+                    {item.year}
+                  </span>
+                  <h3 className="text-[14px] font-black text-[#1a1612] uppercase tracking-[0.15em] mb-4">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-400 text-[13px] leading-relaxed max-w-[220px]">
+                    {item.desc}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>
