@@ -17,14 +17,14 @@ const Benefits = () => {
 
   return (
     // -mt-[150px] orqali tepaga yopishtirdik, relative z-20 ustiga chiqishini ta'minlaydi
-    <section className="relative z-20 -mt-[100px] lg:-mt-[180px] w-full bg-[#14110e] py-16 lg:py-24 overflow-hidden">
+    <section className="relative z-20 -mt-[25px] lg:-mt-[130px] w-full pt-3  bg-[#14110e]  lg:pt-20 overflow-hidden">
       {/* 1. Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/lawho06.png.png"
+          src="/womanbg.png"
           alt="Benefits Background"
           fill
-          className="object-cover opacity-15"
+          className="object-contain "
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#14110e] via-[#14110e]/80 to-transparent" />

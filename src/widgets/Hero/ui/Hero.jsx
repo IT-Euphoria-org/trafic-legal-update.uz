@@ -1,7 +1,9 @@
 "use client";
+import React from "react";
 import { motion } from "framer-motion";
 import { Container } from "@/shared/ui/Container/Container";
 import Image from "next/image";
+import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   return (
@@ -9,10 +11,10 @@ const Hero = () => {
       {/* 1. Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/Images/hero-bg.jpg"
+          src="/intribg.png"
           alt="Background"
           fill
-          className="object-cover opacity-20"
+          className="object-cover"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#14110e] via-[#14110e]/40 to-transparent lg:block hidden" />
@@ -22,23 +24,34 @@ const Hero = () => {
       {/* 2. Main Content Area */}
       <div className="relative z-10 flex-grow flex items-center pt-32 lg:pt-0 pb-10 lg:pb-0 min-h-screen lg:min-h-0">
         <Container className="flex flex-col lg:flex-row items-center justify-between gap-10">
-          {/* Chap qism: Matnlar - Mobilada text-start qilindi */}
           <div className="w-full lg:w-[60%] text-white text-start order-1 lg:order-1">
-            <motion.span
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              className="text-[#C59D5F] text-[12px] md:text-[14px] font-bold tracking-[0.4em] uppercase mb-6 block"
-            >
-              We Help For
-            </motion.span>
+            {/* --- REACT SIMPLE TYPEWRITER SECTION --- */}
+            <div className="flex items-center gap-2 mb-6 h-6">
+              <span className="text-[#C59D5F] text-[12px] md:text-[14px] font-bold tracking-[0.4em] uppercase">
+                We Help For
+              </span>
+              <span className="text-white text-[12px] md:text-[14px] font-bold tracking-[0.4em] uppercase min-w-[150px] italic">
+                <Typewriter
+                  words={["CONSULTING", "ADVICE", "LEGAL ADVICE"]}
+                  loop={0} // 0 bo'lsa cheksiz aylanadi
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={80}
+                  deleteSpeed={50}
+                  delaySpeed={2000}
+                />
+              </span>
+            </div>
 
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               className="text-4xl md:text-6xl lg:text-[85px] font-serif leading-[1.1] mb-8 uppercase tracking-tight"
             >
-              Law Expertise 
-              <span className="italic font-light">It's Our Policy</span>
+              Law Expertise
+              <span className="italic font-light block lg:inline ml-0 lg:ml-4">
+                It's Our Policy
+              </span>
             </motion.h1>
 
             <motion.p className="text-gray-400 text-sm md:text-base max-w-2xl mb-10 leading-relaxed uppercase tracking-[0.2em] opacity-80">
@@ -78,7 +91,7 @@ const Hero = () => {
         </Container>
       </div>
 
-      {/* 3. Bottom Features Grid - lg:-bottom-[60px] orqali tepaga surildi */}
+      {/* 3. Bottom Features Grid */}
       <div className="relative lg:absolute bottom-0 lg:-bottom-[60px] left-0 w-full z-20">
         <Container className="grid grid-cols-1 md:grid-cols-3 shadow-2xl">
           <FeatureCard title="Experienced" icon="⚖️" />

@@ -1,1 +1,34 @@
 @import "tailwindcss";
+
+@layer base {
+  body {
+    position: relative;
+    /* Agar kontent chiziqning ustiga minib qolmasligini xohlasangiz, 
+       chapdan padding berishingiz mumkin: */
+    /* padding-left: 200px; */
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 100px; /* Chapdan masofa */
+    width: 1.5px;  /* Chiziq qalinligi */
+    height: 100vh; /* Butun ekran bo'yi */
+    background-color: #c59d5f; /* Jigarrang/Tilla rang */
+    opacity: 0.5; /* Juda yorqin bo'lib kontentga xalaqit bermasligi uchun */
+    z-index: 50; /* Kontentdan ustun turishi uchun (lekin modal/navbardan past) */
+    pointer-events: none; /* Chiziq ostidagi tugmalarni bosishga xalaqit bermasligi uchun */
+  }
+}
+
+/* Mobil qurilmalarda bu chiziqni yashirgan ma'qul, 
+   chunki 200px ekran yarmini egallab qo'yadi */
+@media (max-width: 768px) {
+  body::before {
+    display: none;
+  }
+}
+
+
+

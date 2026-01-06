@@ -38,9 +38,9 @@ const Statistics = () => {
     // -mt-[80px] orqali Benefits bo'limiga yaqinlashtirildi
     <section className="relative w-full bg-white py-12 lg:py-20 -mt-[60px] lg:-mt-[100px] z-30 overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0 opacity-[0.03]">
+      <div className="absolute inset-0 z-0 ">
         <Image
-          src="/Section.png"
+          src="/cards.png"
           alt="Background Columns"
           fill
           className="object-cover object-center"
