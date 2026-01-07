@@ -1,36 +1,40 @@
 import { NextResponse } from "next/server";
 
 let locales = ["en", "ru", "uz"];
+const defaultLocale = "uz";
 
 export function middleware(request) {
   const { pathname } = request.nextUrl;
 
-  // Static fayllar (rasmlar, shriftlar) uchun middleware ishlamasligi kerak
+  // 1. Statik fayllarni o'tkazib yuborish (MUHIM!)
+  // Bu qism rasm, shrift va faviconlarni middleware-dan himoya qiladi
   if (
     pathname.startsWith("/_next") ||
-    pathname.includes("/api/") ||
-    pathname.includes("/static/") ||
-    pathname.match(/\.(.*)$/) // rasm, favicon, svg va h.k.
+    pathname.startsWith("/api") ||
+    pathname.includes(".") || // rasm.jpg, favicon.ico kabilarni tutadi
+    pathname === "/favicon.ico"
   ) {
-    return;
+    return NextResponse.next();
   }
 
-  // Pathda til bormi yoki yo'qligini tekshirish
+  // 2. Pathda til bormi yoki yo'qligini tekshirish
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
 
-  if (pathnameHasLocale) return;
+  if (pathnameHasLocale) return NextResponse.next();
 
-  // Agar til bo'lmasa, default 'uz' (yoki 'en') ga yo'naltirish
-  const locale = "uz";
-  request.nextUrl.pathname = `/${locale}${pathname}`;
-  return NextResponse.redirect(request.nextUrl);
+  // 3. Agar til bo'lmasa, defaultLocale ga yo'naltirish
+  // URL-ni to'g'ri yasash (double slash bo'lib ketmasligi uchun)
+  const redirectUrl = new URL(
+    `/${defaultLocale}${pathname === "/" ? "" : pathname}`,
+    request.url
+  );
+
+  return NextResponse.redirect(redirectUrl);
 }
 
 export const config = {
-  matcher: [
-    // Bu middleware barcha sahifalarda ishlaydi, faqat _next va statik fayllardan tashqari
-    "/((?!_next|api|favicon.ico).*)",
-  ],
+  // Statik fayllarni matcher darajasida ham cheklaymiz
+  matcher: ["/((?!api|_next/static|_next/image|favicon.ico|.*\\..*).*)"],
 };
