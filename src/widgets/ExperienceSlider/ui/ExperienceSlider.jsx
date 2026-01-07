@@ -47,6 +47,11 @@ const ExperienceSlider = () => {
 
   if (!mounted) return null; // Serverda render bo'lishini to'xtatadi
 
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+
   return (
     <section className="relative w-full bg-[#0a0a0a] overflow-hidden">
       {/* --- 1. STATISTIKA QISMI --- */}
@@ -119,7 +124,7 @@ const ExperienceSlider = () => {
           navigation={{ prevEl, nextEl }}
           breakpoints={{
             640: { slidesPerView: 2 },
-            1024: { slidesPerView: 4 },
+            1024: { slidesPerView: 4 }, // 4 ta slayd turganda rasmlar proporsiyasi to'g'ri bo'ladi
           }}
           className="h-full"
         >
@@ -155,13 +160,13 @@ const ExperienceSlider = () => {
             ref={(node) => setPrevEl(node)}
             className="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center text-white bg-black/40 backdrop-blur-md hover:bg-[#C59D5F] hover:text-black transition-all active:scale-90"
           >
-            <FaChevronLeft size={16} />
+            <FaChevronLeft size={14} />
           </button>
           <button
             ref={(node) => setNextEl(node)}
             className="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center text-white bg-black/40 backdrop-blur-md hover:bg-[#C59D5F] hover:text-black transition-all active:scale-90"
           >
-            <FaChevronRight size={16} />
+            <FaChevronRight size={14} />
           </button>
         </div>
       </div>

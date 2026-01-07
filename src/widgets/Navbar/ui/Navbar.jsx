@@ -52,6 +52,26 @@ const Navbar = () => {
     { name: "Contact Us", path: `/${lang}/contact` },
   ];
 
+  // Mobile menyu animatsiyasi uchun variantlar
+  const containerVars = {
+    initial: { transition: { staggerChildren: 0.05, staggerDirection: -1 } },
+    open: {
+      transition: {
+        delayChildren: 0.2,
+        staggerChildren: 0.07,
+        staggerDirection: 1,
+      },
+    },
+  };
+
+  const linkVars = {
+    initial: {
+      y: "30vh",
+      transition: { duration: 0.5, ease: [0.37, 0, 0.63, 1] },
+    },
+    open: { y: 0, transition: { duration: 0.7, ease: [0, 0.55, 0.45, 1] } },
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${
