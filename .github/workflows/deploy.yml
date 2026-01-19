@@ -10,26 +10,31 @@ concurrency:
 
 jobs:
   deploy:
+    # GitHub Runner-dagi mavjud taglar bilan bir xil qildik
     runs-on: [self-hosted, Linux, X64]
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-        # Kodni runner yonidagi 'trafic-legal-app' papkasiga yuklaydi
         with:
+          # Kodni 'trafic-legal-app' papkasiga yuklaymiz
           path: trafic-legal-app
 
       - name: Deploy Next to Runner
         run: |
-          # 1. Runner joylashgan asosiy papkaga o'tamiz
-          cd /home/user/actions-runner/_work/trafic-legal-update.uz/trafic-legal-update.uz/trafic-legal-app
+          # 1. Runnerning ishchi papkasiga (workspace) kiramiz
+          # GitHub Actions odatda GITHUB_WORKSPACE o'zgaruvchisidan foydalanadi
+          cd ${{ github.workspace }}/trafic-legal-app
 
           # 2. Docker-ni ko'taramiz
-          # --force-recreate hamma narsani yangidan toza ko'taradi
+          # 'deployer' foydalanuvchisi docker guruhida bo'lishi shart
           docker compose up -d --build --force-recreate
 
-          # 3. Tozalash
+          # 3. Tozalash (foydalanilmagan eski obrazlarni o'chirish)
           docker image prune -f
 
-      - name: Show Location
-        run: pwd && ls -la
+      - name: Show Location and Status
+        run: |
+          cd ${{ github.workspace }}/trafic-legal-app
+          pwd
+          docker ps | grep trafic-legal-app
