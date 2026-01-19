@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Container } from "@/shared/ui/Container/Container";
 import { MdKeyboardArrowDown } from "react-icons/md";
-// HiMenuAlt3 olib tashlandi, o'rniga o'zimiz chizamiz
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import {
@@ -13,13 +12,16 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 
-const Navbar = () => {
+// Navbar endi dict va lang proplarini qabul qiladi
+export const Navbar = ({ dict, lang }) => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const params = useParams();
+
   const pathname = usePathname();
-  const lang = params.lang || "en";
+
+  // Tarjimalarni dict ichidan olish (agar dict.navbar mavjud bo'lmasa xato bermasligi uchun default qiymatlar)
+  const t = dict?.navbar || {};
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -31,45 +33,43 @@ const Navbar = () => {
     document.body.style.overflow = isOpen ? "hidden" : "unset";
   }, [isOpen]);
 
+  // Navigatsiya linklarini tarjimalarga bog'laymiz
   const navLinks = [
-    { name: "Home", path: `/${lang}` },
-    { name: "About", path: `/${lang}/about` },
-    { name: "Case", path: `/${lang}/case` },
-    { name: "Services", path: `/${lang}/service` },
+    { name: t.home || "Home", path: `/${lang}` },
+    { name: t.about || "About", path: `/${lang}/about` },
+    { name: t.case || "Case", path: `/${lang}/case` },
+    { name: t.services || "Services", path: `/${lang}/service` },
     {
-      name: "Page",
+      name: t.page || "Page",
       path: "#",
       hasDropdown: true,
       subLinks: [
-        { name: "Our Team", path: `/${lang}/team` },
-        { name: "Team Details", path: `/${lang}/team-details` },
-        { name: "Case Details", path: `/${lang}/case-details` },
-        { name: "Testimonials", path: `/${lang}/testimonials` },
-        { name: "FAQ", path: `/${lang}/faq` },
+        { name: t.team || "Our Team", path: `/${lang}/team` },
+        {
+          name: t.teamDetails || "Team Details",
+          path: `/${lang}/team-details`,
+        },
+        {
+          name: t.caseDetails || "Case Details",
+          path: `/${lang}/case-details`,
+        },
+        {
+          name: t.testimonials || "Testimonials",
+          path: `/${lang}/testimonials`,
+        },
+        { name: t.faq || "FAQ", path: `/${lang}/faq` },
       ],
     },
-    { name: "News", path: `/${lang}/news` },
-    { name: "Contact Us", path: `/${lang}/contact` },
+    { name: t.news || "News", path: `/${lang}/news` },
+    { name: t.contact || "Contact Us", path: `/${lang}/contact` },
   ];
 
-  // Mobile menyu animatsiyasi uchun variantlar
-  const containerVars = {
-    initial: { transition: { staggerChildren: 0.05, staggerDirection: -1 } },
-    open: {
-      transition: {
-        delayChildren: 0.2,
-        staggerChildren: 0.07,
-        staggerDirection: 1,
-      },
-    },
-  };
-
-  const linkVars = {
-    initial: {
-      y: "30vh",
-      transition: { duration: 0.5, ease: [0.37, 0, 0.63, 1] },
-    },
-    open: { y: 0, transition: { duration: 0.7, ease: [0, 0.55, 0.45, 1] } },
+  // Til o'zgartirilganda pathni saqlab qolish funksiyasi
+  const getRedirectPath = (targetLang) => {
+    if (!pathname) return "/";
+    const segments = pathname.split("/");
+    segments[1] = targetLang; // /uz/about -> /ru/about
+    return segments.join("/");
   };
 
   return (
@@ -90,7 +90,7 @@ const Navbar = () => {
             <div className="w-4 h-4 bg-[#C59D5F] rounded-full" />
           </div>
           <span className="text-[#C59D5F] text-2xl font-bold tracking-[0.25em] uppercase">
-            LAWONE
+            TRAFFIC LEGAL
           </span>
         </Link>
 
@@ -143,15 +143,12 @@ const Navbar = () => {
             })}
           </ul>
 
-          {/* Desktop Languages */}
+          {/* Languages Switcher Desktop */}
           <div className="flex items-center gap-4 border-l border-white/10 ml-4 pl-6">
             {["UZ", "RU", "EN"].map((l) => (
               <Link
                 key={l}
-                href={`/${l.toLowerCase()}${pathname.replace(
-                  /^\/[a-z]{2}/,
-                  ""
-                )}`}
+                href={getRedirectPath(l.toLowerCase())}
                 className={`text-[10px] font-black cursor-pointer transition-colors ${
                   lang === l.toLowerCase()
                     ? "text-[#C59D5F]"
@@ -164,37 +161,34 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* --- CUSTOM SERYOZNIY BURGER BUTTON --- */}
+        {/* --- MOBILE BURGER BUTTON --- */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="lg:hidden w-10 h-10 flex flex-col justify-center items-end gap-1.5 relative z-[110] focus:outline-none group"
         >
-          {/* Birinchi chiziq */}
           <motion.span
             animate={
               isOpen
                 ? { rotate: 45, y: 8, width: "100%" }
                 : { rotate: 0, y: 0, width: "100%" }
             }
-            className="h-[2px] bg-white block rounded-full transition-all duration-300"
+            className="h-[2px] bg-white block rounded-full"
           />
-          {/* Ikkinchi chiziq (O'rta) */}
           <motion.span
             animate={
               isOpen
                 ? { opacity: 0, x: 20 }
                 : { opacity: 1, x: 0, width: "70%" }
             }
-            className="h-[2px] bg-[#C59D5F] block rounded-full transition-all duration-300"
+            className="h-[2px] bg-[#C59D5F] block rounded-full"
           />
-          {/* Uchinchi chiziq */}
           <motion.span
             animate={
               isOpen
                 ? { rotate: -45, y: -8, width: "100%" }
                 : { rotate: 0, y: 0, width: "40%" }
             }
-            className="h-[2px] bg-white block rounded-full transition-all duration-300"
+            className="h-[2px] bg-white block rounded-full"
           />
         </button>
       </Container>
@@ -218,11 +212,18 @@ const Navbar = () => {
               transition={{ type: "tween", duration: 0.4, ease: "circOut" }}
               className="fixed top-0 right-0 h-screen w-[85%] bg-[#0f0d0b] z-[105] shadow-[-10px_0_40px_rgba(0,0,0,0.8)] flex flex-col p-8 lg:hidden"
             >
-              <div className="mt-12 mb-10">
-                <span className="text-[#C59D5F] text-[10px] font-bold tracking-[0.4em] uppercase block mb-2 italic">
-                  Legal Advisory & Services
-                </span>
-                <div className="h-[1px] w-20 bg-[#C59D5F]" />
+              {/* Language Switcher for Mobile */}
+              <div className="flex gap-4 mt-8 mb-6">
+                {["UZ", "RU", "EN"].map((l) => (
+                  <Link
+                    key={l}
+                    onClick={() => setIsOpen(false)}
+                    href={getRedirectPath(l.toLowerCase())}
+                    className={`text-xs font-bold ${lang === l.toLowerCase() ? "text-[#C59D5F]" : "text-white/50"}`}
+                  >
+                    {l}
+                  </Link>
+                ))}
               </div>
 
               <ul className="flex flex-col gap-4 flex-grow overflow-y-auto pr-4">
@@ -251,46 +252,36 @@ const Navbar = () => {
                         <button
                           onClick={() =>
                             setActiveDropdown(
-                              activeDropdown === idx ? null : idx
+                              activeDropdown === idx ? null : idx,
                             )
                           }
-                          className={`p-2 transition-transform duration-300 ${
-                            activeDropdown === idx
-                              ? "rotate-180 text-[#C59D5F]"
-                              : "text-white"
-                          }`}
                         >
-                          <MdKeyboardArrowDown size={24} />
+                          <MdKeyboardArrowDown
+                            size={24}
+                            className={
+                              activeDropdown === idx
+                                ? "rotate-180 text-[#C59D5F]"
+                                : "text-white"
+                            }
+                          />
                         </button>
                       )}
                     </div>
 
-                    {link.hasDropdown && (
-                      <AnimatePresence>
-                        {activeDropdown === idx && (
-                          <motion.div
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: "auto", opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            className="overflow-hidden bg-white/5 mt-4 rounded-sm"
+                    {link.hasDropdown && activeDropdown === idx && (
+                      <div className="bg-white/5 mt-4 rounded-sm flex flex-col p-4 gap-4">
+                        {link.subLinks.map((sub, sIdx) => (
+                          <Link
+                            key={sIdx}
+                            href={sub.path}
+                            onClick={() => setIsOpen(false)}
+                            className="text-gray-400 text-sm italic flex items-center gap-3"
                           >
-                            <ul className="flex flex-col p-4 gap-4">
-                              {link.subLinks.map((sub, sIdx) => (
-                                <li key={sIdx}>
-                                  <Link
-                                    href={sub.path}
-                                    onClick={() => setIsOpen(false)}
-                                    className="text-gray-400 text-sm italic hover:text-[#C59D5F] transition-colors flex items-center gap-3"
-                                  >
-                                    <div className="w-1.5 h-1.5 rounded-full bg-[#C59D5F]" />
-                                    {sub.name}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
+                            <div className="w-1.5 h-1.5 rounded-full bg-[#C59D5F]" />
+                            {sub.name}
+                          </Link>
+                        ))}
+                      </div>
                     )}
                   </motion.li>
                 ))}
@@ -307,11 +298,11 @@ const Navbar = () => {
                       >
                         <Icon size={16} />
                       </a>
-                    )
+                    ),
                   )}
                 </div>
                 <p className="text-[9px] text-gray-600 uppercase tracking-widest italic">
-                  © 2026 LAWONE ADVISORY
+                  © 2026 TRAFFIC LEGAL
                 </p>
               </div>
             </motion.div>
@@ -321,5 +312,3 @@ const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar;

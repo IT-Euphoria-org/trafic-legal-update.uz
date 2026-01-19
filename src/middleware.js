@@ -19,7 +19,7 @@ export function middleware(request) {
 
   // 2. Pathda til bormi yoki yo'qligini tekshirish
   const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
   );
 
   if (pathnameHasLocale) return NextResponse.next();
@@ -28,7 +28,7 @@ export function middleware(request) {
   // URL-ni to'g'ri yasash (double slash bo'lib ketmasligi uchun)
   const redirectUrl = new URL(
     `/${defaultLocale}${pathname === "/" ? "" : pathname}`,
-    request.url
+    request.url,
   );
 
   return NextResponse.redirect(redirectUrl);

@@ -80,13 +80,10 @@ export default async function LangLayout({ children, params }) {
         </Script>
       </head>
       <body className={inter.className}>
-      
         <Navbar dict={dict} lang={lang} />
 
         <main>{children}</main>
-        <Footer/>
-
-    
+        <Footer />
       </body>
     </html>
   );

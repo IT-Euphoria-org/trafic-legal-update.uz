@@ -37,6 +37,9 @@ export default async function Home({ params }) {
   // 3. Dictionary-ni yuklash
   const dict = await getDictionary(lang);
 
+  console.log(dict);
+
+
   return (
     <>
       <Hero dict={dict} lang={lang} />
