@@ -10,7 +10,7 @@ concurrency:
 
 jobs:
   deploy:
-    runs-on: vps03603 
+    runs-on: [self-hosted, Linux, X64]
 
     steps:
       - name: Checkout Code
