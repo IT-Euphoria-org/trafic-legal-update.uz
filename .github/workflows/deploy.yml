@@ -10,7 +10,7 @@ concurrency:
 
 jobs:
   deploy:
-    runs-on: [self-hosted, linux, prod]
+    runs-on: [self-hosted, Linux, X64, prod]
 
     steps:
       # 1. Eski papkani tozalash (Agar mavjud bo'lsa)
